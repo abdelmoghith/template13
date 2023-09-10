@@ -1,0 +1,84 @@
+body{
+    background-color:  hsl(204, 43%, 93%) ;
+}
+.card {
+    width: 700px;
+    height: 500px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    font-family: 'Karla', sans-serif;
+}
+.up{
+    padding: 40px;
+    background-color: white;
+}
+.up h2{
+   color: hsl(179, 62%, 43%) ;
+   font-size: 27px;
+}
+.up p{
+   color:hsl(218, 22%, 67%) ;
+   font-weight: bold;
+}
+.up h3{
+   color: hsl(71, 73%, 54%);
+   font-size: 20px;
+}
+.down {
+    display: grid;
+    grid-template-columns: repeat( 2 , 1fr);
+    color: white;
+}
+.left{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color:  hsl(179, 62%, 43%);
+}
+.right{
+    padding-top: 20px;
+    padding-bottom: 25px;
+    padding-left: 40px;
+    background-color: hsla(179, 62%, 43%, 0.855) ;
+}
+.right p{
+    color: hsl(218deg 35.93% 85.35%);
+    line-height: 24px;
+}
+.ketba{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.ketba p:first-of-type{
+    font-size: 45px;
+    margin: 0;
+}
+.ketba p:last-of-type{
+   margin-right: 100px;
+   color:hsl(218deg 35.93% 79.35%) ;
+}
+.btn{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    background-color: hsl(71, 73%, 54%) ;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 30px;
+}
+@media (max-width:768px) {
+    .down {
+        display: block;
+    }
+    .card{
+        height: auto;
+        display: block;
+        width: auto;
+        margin: 0;
+    } 
+}
